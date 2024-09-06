@@ -1,6 +1,6 @@
 /*
-    Programa leia uma seqüência de valores inteiros fornecida pelo usuário em uma
-    linha de entrada e conte o número de valores positivos, negativos e zeros.
+    Adaptar o programa acima para que ele calcule o percentual dos valores positivos,
+    negativos e zeros em relação ao total de valores fornecidos.
     Autor - João Comini
     Data - 28/08/24
 */
@@ -28,7 +28,8 @@ int main()
         else contaNegativos++;
     }
 
-    printf("%i %i %i", contaPositivos, contaNegativos, contaZeros);s
+    printf("%i%% %i%% %i%%", contaPositivos * 100 / N, contaNegativos * 100 / N, contaZeros * 100 / N);
 
     return 0;
 }
+
